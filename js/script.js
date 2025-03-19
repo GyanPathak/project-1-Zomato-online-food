@@ -30,7 +30,7 @@ document.addEventListener("DOMContentLoaded", function () {
         }
     });
 
-    // ✨ Add hover animation for header links
+    // Add hover animation for header links
     const headerLinks = document.querySelectorAll("header ul li a");
     
     headerLinks.forEach(link => {
