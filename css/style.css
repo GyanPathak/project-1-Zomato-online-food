@@ -1,0 +1,168 @@
+/* Reset some default margins and paddings */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #fff;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Header styling */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #e50914; /* Red theme */
+    padding: 20px 40px;
+    color: #fff;
+}
+
+header .logo img {
+    width: 150px;
+    transition: transform 0.5s ease;
+}
+
+header ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+header ul li {
+    position: relative;
+}
+
+header ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+header ul li a:hover {
+    color: #ffcccc;
+}
+
+/* Main section styling */
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: calc(100vh - 160px);
+    background: url('/img/bg.png') no-repeat center center/cover;
+    text-align: center;
+    padding: 20px;
+}
+
+main img {
+    width: 350px;
+    margin-bottom: 20px;
+    opacity: 0;
+    transform: translateY(-20px);
+    animation: fadeInDown 1s forwards 0.5s;
+}
+
+main p {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    color: #ffffff;
+    text-shadow: 1px 1px 2px #000;
+}
+
+main input {
+    width: 300px;
+    max-width: 90%;
+    padding: 12px 15px;
+    border: 2px solid #f0f0f0;
+    border-radius: 25px;
+    font-size: 0.95rem;
+    transition: border-color 0.3s ease;
+}
+
+main input:focus {
+    border-color: #f0f0f0;
+    outline: none;
+}
+
+/* Food Delivery Section Styling */
+.food-delivery {
+    background-color: #ffe6e6;
+    padding: 40px;
+    text-align: center;
+}
+
+.food-delivery h2 {
+    font-size: 2rem;
+    color: #b20710;
+    margin-bottom: 30px;
+}
+
+.delivery-options {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.option {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    width: 250px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.option img {
+    width: 60px;
+    margin-bottom: 15px;
+}
+
+.option h3 {
+    font-size: 1.2rem;
+    color: #b20710;
+    margin-bottom: 10px;
+}
+
+.option p {
+    font-size: 1rem;
+    color: #555;
+}
+
+.option:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+}
+
+/* Footer styling */
+footer {
+    text-align: center;
+    padding: 15px 0;
+    background-color: #222;
+    color: #aaa;
+    font-size: 0.9rem;
+}
+
+/* Keyframes for animations */
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Additional hover animation for logo */
+header .logo img:hover {
+    transform: scale(1.1);
+}
+
